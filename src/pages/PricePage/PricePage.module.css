@@ -1,0 +1,348 @@
+.priceContainer {
+  background: transparent;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 105px 150px;
+  position: relative;
+  overflow: hidden;
+  gap: 20px;
+}
+.graphlogo {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  width: 100%;
+  z-index: -1;
+}
+
+.leftContainer {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  justify-content: space-between;
+  gap: 130px;
+}
+.leftContainer .upper {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.leftContainer .upper p:first-child {
+  color: #000;
+  font-size: 64px;
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 800;
+  letter-spacing: -1.92px;
+  margin: 0px;
+}
+
+.leftContainer .upper p:first-child span {
+  background: -webkit-linear-gradient(#3f6fc1, #05445e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.leftContainer .upper p:last-child {
+  color: #000;
+  font-size: 24px;
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: -0.72px;
+  margin: 0px;
+}
+.leftContainer .lower {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+.rightContainer {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+
+  border-radius: 16px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  position: relative;
+  overflow: hidden;
+}
+.rightContainer .upper {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  padding: 40px;
+}
+
+.logo {
+  position: absolute;
+  right: -12px;
+  top: 0px;
+  height: 260px;
+}
+.logo svg {
+  height: 100%;
+}
+
+.price {
+  display: flex;
+  flex-direction: column;
+}
+
+.heading {
+  color: #0f0f0f;
+  font-size: 24px;
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px;
+  letter-spacing: -0.72px;
+}
+
+.original {
+  color: #818181;
+  font-size: 56px;
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 72px;
+  letter-spacing: -1.68px;
+  text-decoration: line-through;
+}
+
+.discounted {
+  font-size: 72px;
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 72px;
+  letter-spacing: -2.16px;
+  background: -webkit-linear-gradient(#3f6fc1, #05445e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.rightContainer .lower {
+  padding: 40px;
+  background: linear-gradient(180deg, #05445e 0%, #002f42 100%);
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.tileText {
+  color: #fff;
+  font-size: 24px;
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: -0.72px;
+}
+
+.child {
+  display: flex;
+  flex-direction: column;
+  min-width: 180px;
+}
+.child p:first-child {
+  color: #000;
+  font-size: 28px;
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: -0.96px;
+}
+.child p:last-child {
+  color: #000;
+  font-size: 20px;
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: -0.96px;
+}
+
+@media screen and (max-width: 480px) {
+  .priceContainer {
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 32px;
+    position: relative;
+    overflow: hidden;
+    gap: 45px;
+  }
+  .graphlogo {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    z-index: -1;
+  }
+
+  .leftContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: space-between;
+    gap: 24px;
+  }
+  .leftContainer .upper {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .leftContainer .upper p:first-child {
+    color: #000;
+    text-align: center;
+    font-size: 32px;
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 48px;
+    letter-spacing: -0.96px;
+  }
+
+  .leftContainer .upper p:first-child span {
+    background: -webkit-linear-gradient(#3f6fc1, #05445e);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: block;
+  }
+
+  .leftContainer .upper p:last-child {
+    color: #000;
+    text-align: center;
+    font-size: 12px;
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: -0.36px;
+  }
+  .leftContainer .lower {
+    display: flex;
+    flex-direction: row;
+    gap: 14px;
+    flex-wrap: wrap;
+  }
+  .rightContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    border-radius: 16px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    position: relative;
+    overflow: hidden;
+  }
+  .rightContainer .upper {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 15.8px;
+  }
+
+  .logo {
+    position: absolute;
+    right: -82px;
+    top: 0px;
+    height: 131px;
+  }
+  .logo svg {
+    height: 100%;
+  }
+
+  .price {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .heading {
+    color: #0f0f0f;
+    font-size: 12px;
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 19.044px;
+    letter-spacing: -0.36px;
+  }
+
+  .original {
+    color: #818181;
+    font-size: 24px;
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: -0.72px;
+    text-decoration-line: strikethrough;
+  }
+
+  .discounted {
+    font-size: 32px;
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 42.849px;
+    letter-spacing: -0.96px;
+    background: -webkit-linear-gradient(#3f6fc1, #05445e);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .rightContainer .lower {
+    padding: 24px;
+    background: linear-gradient(180deg, #05445e 0%, #002f42 100%);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .tileText {
+    margin-left: 8px;
+    color: #fff;
+    font-size: 12px;
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: -0.36px;
+  }
+
+  .child {
+    display: flex;
+    flex-direction: column;
+    max-width: 100px;
+  }
+  .child p:first-child {
+    color: #000;
+    font-size: 14px;
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: -0.42px;
+  }
+  .child p:last-child {
+    color: #000;
+    font-size: 12px;
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: -0.96px;
+  }
+}

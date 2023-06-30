@@ -1,0 +1,97 @@
+.button {
+  display: flex;
+  height: 100%;
+  padding: 8px 40px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.white {
+  background: linear-gradient(133deg, #fff 0%, #dff6ff 100%);
+}
+.color {
+  background: linear-gradient(135deg, #033042 0%, #005c83 100%);
+  position: relative;
+}
+.color::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 8px;
+  padding: 1px;
+  background: linear-gradient(90deg, #cff1ff 0%, #2d5666 100%);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}
+.white p {
+  color: #05445e;
+  text-align: center;
+  font-size: 22px;
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: -0.66px;
+}
+.color p {
+  color: #fff;
+  text-align: center;
+  font-size: 22px;
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: -0.66px;
+}
+@media screen and (max-width: 480px) {
+  .button {
+    display: flex;
+    height: 100%;
+    padding: 8px 7.5px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  .white {
+    background: linear-gradient(133deg, #fff 0%, #dff6ff 100%);
+  }
+  .color {
+    background: linear-gradient(135deg, #033042 0%, #005c83 100%);
+    position: relative;
+  }
+  .color::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 8px;
+    padding: 1px;
+    background: linear-gradient(90deg, #cff1ff 0%, #2d5666 100%);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box,
+      linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+  }
+  .white p {
+    color: #05445e;
+    text-align: center;
+    font-size: 12px;
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: -0.36px;
+  }
+  .color p {
+    color: #fff;
+    text-align: center;
+    font-size: 12px;
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: -0.36px;
+  }
+}
